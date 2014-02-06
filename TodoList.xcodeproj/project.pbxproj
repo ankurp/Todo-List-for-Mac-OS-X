@@ -20,6 +20,8 @@
 		92B1A30E18A33A3E00A1C47B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B1A2E718A33A3E00A1C47B /* Cocoa.framework */; };
 		92B1A31618A33A3E00A1C47B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92B1A31418A33A3E00A1C47B /* InfoPlist.strings */; };
 		92B1A31818A33A3E00A1C47B /* TodoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B1A31718A33A3E00A1C47B /* TodoListTests.m */; };
+		92B1A32518A33BCB00A1C47B /* APTodo.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B1A32418A33BCB00A1C47B /* APTodo.m */; };
+		92B1A32818A33BD300A1C47B /* APTodoListCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B1A32718A33BD300A1C47B /* APTodoListCellView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		92B1A31318A33A3E00A1C47B /* TodoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TodoListTests-Info.plist"; sourceTree = "<group>"; };
 		92B1A31518A33A3E00A1C47B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		92B1A31718A33A3E00A1C47B /* TodoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoListTests.m; sourceTree = "<group>"; };
+		92B1A32318A33BCB00A1C47B /* APTodo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTodo.h; sourceTree = "<group>"; };
+		92B1A32418A33BCB00A1C47B /* APTodo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTodo.m; sourceTree = "<group>"; };
+		92B1A32618A33BD300A1C47B /* APTodoListCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTodoListCellView.h; sourceTree = "<group>"; };
+		92B1A32718A33BD300A1C47B /* APTodoListCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTodoListCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,8 @@
 		92B1A2ED18A33A3E00A1C47B /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				92B1A32218A33BBE00A1C47B /* Model */,
+				92B1A32118A33BB800A1C47B /* View */,
 				92B1A2F918A33A3E00A1C47B /* APDocument.h */,
 				92B1A2FA18A33A3E00A1C47B /* APDocument.m */,
 				92B1A2FC18A33A3E00A1C47B /* APDocument.xib */,
@@ -158,6 +166,24 @@
 				92B1A31418A33A3E00A1C47B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92B1A32118A33BB800A1C47B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92B1A32618A33BD300A1C47B /* APTodoListCellView.h */,
+				92B1A32718A33BD300A1C47B /* APTodoListCellView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		92B1A32218A33BBE00A1C47B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92B1A32318A33BCB00A1C47B /* APTodo.h */,
+				92B1A32418A33BCB00A1C47B /* APTodo.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +288,9 @@
 			files = (
 				92B1A2F418A33A3E00A1C47B /* main.m in Sources */,
 				92B1A2FB18A33A3E00A1C47B /* APDocument.m in Sources */,
+				92B1A32518A33BCB00A1C47B /* APTodo.m in Sources */,
 				92B1A30418A33A3E00A1C47B /* APDocument.xcdatamodeld in Sources */,
+				92B1A32818A33BD300A1C47B /* APTodoListCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

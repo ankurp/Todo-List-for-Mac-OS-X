@@ -8,6 +8,18 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface APDocument : NSPersistentDocument
+@interface APDocument : NSPersistentDocument {
+	NSArray *_sortDescriptors;
+}
+
+@property (weak, nonatomic) IBOutlet NSTabView *tabView;
+@property (weak, nonatomic) IBOutlet NSTableView *tableView;
+@property (weak, nonatomic) IBOutlet NSTableView *completedTableView;
+@property (weak, nonatomic) IBOutlet NSTableColumn *tableColumn;
+@property (weak, nonatomic) IBOutlet NSTableColumn *completedTableColumn;
+
+@property (weak, nonatomic) IBOutlet NSArrayController *todoArrayController;
+
+- (IBAction)toggleCheckbox:(NSButton*)checkBox;
 
 @end
